@@ -1,0 +1,11 @@
+#GEdit ignore
+*.md~
+*.txt~
+#GEdit ignore
+*.html~
+*.py~
+#ignore pyc file
+*.py[cod]
+#ignore virtual env folder
+venv
+

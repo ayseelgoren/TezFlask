@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="text-info bg-danger">
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   
+    <title>Türkçenin Geçmişten Günümüze Değişimi</title>
+    <style>
+        #table-container {
+            position: relative;
+            width: 90%;
+            left: 5%;
+        }
+    </style>
+</head>
+
+<body style="background-color: #cce6ff;">
+    
+    <div >
+        <div >
+            <br><br>
+            <br>
+            <center>
+                <h1 style="font-size:50px;"> Türkçenin Geçmişten Günümüze Değişimi</h1>
+            </center>
+            <!--  <table  class="table table-responsive table-bordered table-striped table-hover " align='center'>
+             <thead>
+                    <tr role="row">
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Title</th>
+                        <th>E-mail</th>
+                        <th>Birthdate</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in rows %}
+                    <tr>
+                        <td>
+                            {{ row.split(',')[0] }}
+                        </td>
+                        <td>
+                            {{ row.split(',')[1] }}
+                        </td>
+                        <td>
+                            {{ row.split(',')[2] }}
+                        </td>
+                        <td>
+                            {{ row.split(',')[3] }}
+                        </td>
+                        <td>
+                            {{ row.split(',')[4] }}
+                        </td>
+                        <td>
+                            {{ row.split(',')[5] }}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>*/
+     
+            </table>       -->
+            <br>
+            <br><br> 
+            <form action="" method=post enctype=multipart/form-data>
+                    <center>
+                        <select style="font-size: large;color: black;" id="word" name="word">
+                                <option selected value="">Seçiniz</option>
+                                
+                                {% for row in rows %}
+                                    <option value="{{ row.split(',')[0] }}" > {{ row }}</option>
+                                {% endfor %}
+                        </select>
+                        <br>  <br>  <br>  <br>
+                        <button class="button button2">Göster</button>
+                    </center>  
+                    <br>
+            
+             </form>
+        </div>
+       
+    </div>
+</body>
+
+</html>
+<style>
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    padding: 12px 28px;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 28px;
+  }
+</style>
